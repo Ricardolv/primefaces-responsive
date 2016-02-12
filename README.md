@@ -14,4 +14,4 @@ Desenvolvimento de um layout responsivo
 9. PanelGrid responsivo
 10. TabView responsivo
 11. Dialog responsivo
-12. Layouts e temas premium
+
