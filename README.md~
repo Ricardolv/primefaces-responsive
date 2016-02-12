@@ -1,0 +1,45 @@
+# Primefaces Responsivo
+
+Desenvolvimento de um layout responsivo
+
+## Objetivo desse estudo ?
+1. O que é RWD
+2. Layout fixo
+3. Layout fluido
+4. Layout responsivo
+5. Media queries
+6. Grid CSS do PrimeFaces
+7. Menu lateral intercambiável
+8. DataTable responsiva
+9. PanelGrid responsivo
+10. TabView responsivo
+11. Dialog responsivo
+12. Layouts e temas premium
+
+```console
+git clone git@github.com:Ricardolv/eventex-wttd.git wttd
+cd wttd
+python -m venv .wttd
+source .wttd/bin/activate
+pip install -r requirements.txt
+cp contrib/env_sample .env
+python manage.py test
+```
+
+## Como fazer o deploy ?
+
+1. Crie uma instância no heroku
+2. Envie as confiurações para o heroku 
+3. Define uma SECRET_KEY segura para instância
+4. Define DEBUG=False
+5. Configure o serviço de email
+6. Envie o código para o heroku
+
+```console
+heroku create minhainstancia
+heroku config:push
+heroku config:set SECRET_KEY=`python contrib/secret_gen.py`
+heroku config:set DEBUG=False
+# configuro o email
+git push heroku master --force
+```
