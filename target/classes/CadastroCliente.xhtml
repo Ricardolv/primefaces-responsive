@@ -14,9 +14,11 @@
 					<p:commandButton value="Salvar" action="#{clientesManager.salvar}"
 								     process="tabView @this" update="@form" />
 				</p:toolbarGroup>
+				
 				<p:toolbarGroup align="right">
 					<p:commandButton value="Novo" action="#{clientesManager.novoCliente}"
 									 process="@this" update="@form" />
+					<p:separator />
 					<p:button value="Pesquisa" outcome="PesquisaClientes" />
 				</p:toolbarGroup>
 			</p:toolbar>
